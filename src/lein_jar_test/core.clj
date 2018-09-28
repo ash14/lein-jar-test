@@ -1,6 +1,8 @@
-(ns lein-jar-test.core)
+(ns lein-jar-test.core
+  (:gen-class)
+  (:require
+    [taoensso.timbre]))
+    ;[clojure.tools.reader.edn]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -main []
+  (prn "It works!"))
